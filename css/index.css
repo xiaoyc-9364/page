@@ -14,6 +14,12 @@
 	margin: 0 auto;
 	background: #F8EEDF;
 }
+button:hover,
+button:focus {
+	box-shadow: 0 -2px 8px rgba(0,0,0,.6);
+	text-decoration: underline;
+}
+
  /*头部样式*/
 .header{
 	height: 100px;
@@ -261,6 +267,7 @@ nav:after {
 
 }
 .section_main a:hover {
+	box-shadow: 0 -2px 8px rgba(0,0,0,.6);
 	z-index: 5;
 }
 .section_main_footer{
@@ -314,6 +321,10 @@ nav:after {
 .article .content{
 	margin-top: 15px;
 }
+.article .content a:hover,
+.article .content a:focus {
+	text-decoration: underline;
+}
 .article .content h3 a{
 	font-size: 24px;
 	color: #40312a;
@@ -342,6 +353,10 @@ nav:after {
 .hightlight{
 	color: #247184;
 	font-weight: bold;
+}
+.hightlight:hover,
+.hightlight:focus {
+	text-decoration: underline;
 }
 .article button{
 	width: 111px;
@@ -551,6 +566,7 @@ nav:after {
 	left: 147px;
 	top: 17px;
 	background: url(../image/aside_line.png) no-repeat;
+	cursor: default;
 }
 .aside_content p{
 	font-size: 12px;
@@ -597,7 +613,6 @@ nav:after {
 	font-size: 16px;
 	line-height: 32px;
 	text-shadow: 0 -1px 0 #c3892f;
-
 	color: #ffffff;
 	position: absolute;
 	top: 299px;
@@ -626,7 +641,6 @@ nav:after {
 	height: 37px;
 	float: left;
 	font-size: 13px;
-	/*line-height: 18px;*/
 	color: #247184;
 	padding-left: 5px;
 	border: 1px solid #D9D9D9;
@@ -635,6 +649,26 @@ nav:after {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+}
+.footer_mge form input::-webkit-input-placeholder, 
+.pro_detail::-webkit-input-placeholder {
+ /* WebKit browsers */
+    color: #247184;
+}
+.footer_mge form input:-moz-placeholder,
+.pro_detail:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+	color: #247184;
+}
+.footer_mge form input::-moz-placeholder,
+.pro_detail::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+	color: #247184;
+}
+.footer_mge form input::-ms-input-placeholder,
+.pro_detail::-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+	color: #247184;
 }
 .footer_mge .name{
 	width: 112px;
@@ -699,6 +733,10 @@ nav:after {
 .footer_por_img a:nth-child(4) {
 	background: url(../image/footer_img4.png) -18px -20px no-repeat;
 }
+.footer_por_img a:hover,
+.footer_por_img a:focus {
+	box-shadow: 0 -2px 8px rgba(0,0,0,.6);
+}
 .footer_flw{
 	width: 270px;
 }
@@ -737,4 +775,8 @@ nav:after {
 	font-size: 13px;
 	color: #FFFFFF;
 	text-shadow: 0 -1px 1px #333;
+}
+.footer_bottom ul li a:hover,
+.footer_bottom ul li a:focus {
+	text-decoration: underline;
 }
